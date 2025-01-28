@@ -169,8 +169,10 @@ img {
     background-image: 
     linear-gradient(rgba(46, 47, 66, 0.7),  rgba(46, 47, 66, 0.7)),
     url(../images/main-bg.jpg);
-    background-repeat: no-repeat;
     max-width: 1440px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     margin: 0 auto;
 }
 
@@ -203,6 +205,7 @@ img {
     border: none;
     border-radius: 4px;
     margin: 48px auto 0;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .title-btn:hover,
