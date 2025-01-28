@@ -351,9 +351,14 @@ img {
     display: flex;
     align-items: center;
     justify-content: center; 
+    background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icons-address:hover {
+    background-color: #404bbf;
+}
+
+.icons-address:focus {
     background-color: #404bbf;
 }
 
@@ -388,7 +393,7 @@ img {
 .ourportfolio-item {
     width: calc((100% - 48px) / 3);
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .ourportfolio-item:hover {
