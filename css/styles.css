@@ -45,7 +45,10 @@ img {
 
 :root {
     --link-bg-color: #4d5ae5;
-    --paragraff-color: #f4f4fd;; /* Оголошення змінної */
+    --paragraff-color: #f4f4fd;
+    --paragraff-ft-color: #FFFFFF;
+    --footer-bg-color: #4d5ae5;
+    --footer-svg-fill-style: #f4f4fd;
 }
 
 /* -------------HEADER------------- */
@@ -465,8 +468,55 @@ img {
     display: flex;
 }
 
-.box {
-    margin-right: 200px;
+.footer-box {
+    display: flex;
+    align-items: baseline;
+}
+
+.logo-text-box {
+    margin-right: 120px;
+}
+
+/* .social-network-box {
+} */
+
+.social-network-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--paragraff-ft-color);
+    margin-bottom: 16px;    
+}
+
+.social-network-list {
+    display: flex;
+    gap: 16px;
+}
+
+.social-network-item {
+    width: 40px;
+    height: 40px;
+}
+
+.social-network-link {
+    width: 100%;
+    height: 100%;
+    background-color: var(--footer-bg-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);  
+}
+
+.social-network-link:hover,
+.social-network-link:focus {
+    background-color: #31d0aa;
+}
+
+.footer-svg {
+    fill: var(--footer-svg-fill-style)
 }
 
 .footer-logo {     
